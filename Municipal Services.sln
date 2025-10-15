@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Municipal Services", "Municipal Services\Municipal Services.csproj", "{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Municipal Services", "Municipal Services.csproj", "{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
