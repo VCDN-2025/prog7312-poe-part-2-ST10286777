@@ -15,7 +15,9 @@
   ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-Desktop-green?style=for-the-badge&logo=windows)
   ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-2019%2F2022-blueviolet?style=for-the-badge&logo=visualstudio)
 
+<p>Part 1 Demo: </p>
 <a href="https://youtu.be/82EuWq-pjY8"> <img src="https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube" alt="Watch the Demo for Part 1 on YouTube"> </a>
+<p> Part 2 Demo:</p> 
 <a href="https://youtu.be/xHGMzAuiUck"> <img src="https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube" alt="Watch the Demo for Part 2 on YouTube"> </a>
 </div>
 </div>
