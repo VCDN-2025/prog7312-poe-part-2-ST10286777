@@ -1,0 +1,324 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\keira\\source\\repos\\Municipal Services\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\eventsannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\eventsannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\eventsannouncements.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\eventsannouncements.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\eventsannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\eventsannouncements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\reportissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\reportissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\mainmenu.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\mainmenu.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\eventsannouncements.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\eventsannouncements.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\reportissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\reportissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\issuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\issuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|c:\\users\\keira\\source\\repos\\municipal services\\municipal services\\issuecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\issuecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\reportissues.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\reportissues.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|C:\\Users\\keira\\source\\repos\\Municipal Services\\municipal services\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{AF2CB2B6-987B-49F5-A29B-90A3A9139BBC}|Municipal Services\\Municipal Services.csproj|solutionrelative:municipal services\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 36,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.Designer.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\MainMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.Designer.cs",
+              "RelativeToolTip": "Municipal Services\\MainMenu.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T19:17:46.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventsAnnouncements.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\EventsAnnouncements.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.cs [Design]",
+              "RelativeToolTip": "Municipal Services\\EventsAnnouncements.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T10:11:13.236Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventsAnnouncements.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.Designer.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\EventsAnnouncements.Designer.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.Designer.cs",
+              "RelativeToolTip": "Municipal Services\\EventsAnnouncements.Designer.cs",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAAAKABAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:54:59.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventManager.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventManager.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\EventManager.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventManager.cs",
+              "RelativeToolTip": "Municipal Services\\EventManager.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAANYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T12:25:09.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Municipal Services\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T12:00:45.232Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventsAnnouncements.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\EventsAnnouncements.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.cs",
+              "RelativeToolTip": "Municipal Services\\EventsAnnouncements.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:58:23.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportIssues.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\ReportIssues.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.cs [Design]",
+              "RelativeToolTip": "Municipal Services\\ReportIssues.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T19:14:32.752Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Event.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\Event.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Event.cs",
+              "RelativeToolTip": "Municipal Services\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:14:37.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Issue.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Issue.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\Issue.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Issue.cs",
+              "RelativeToolTip": "Municipal Services\\Issue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:58:40.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.cs",
+              "RelativeToolTip": "Municipal Services\\MainMenu.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T12:53:07.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventsAnnouncements.resx",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.resx",
+              "RelativeDocumentMoniker": "Municipal Services\\EventsAnnouncements.resx",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\EventsAnnouncements.resx",
+              "RelativeToolTip": "Municipal Services\\EventsAnnouncements.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-15T11:55:06.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainMenu.resx",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.resx",
+              "RelativeDocumentMoniker": "Municipal Services\\MainMenu.resx",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\MainMenu.resx",
+              "RelativeToolTip": "Municipal Services\\MainMenu.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-10T12:53:02.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Program.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\Program.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Program.cs",
+              "RelativeToolTip": "Municipal Services\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:38:02.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReportIssues.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\ReportIssues.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.cs",
+              "RelativeToolTip": "Municipal Services\\ReportIssues.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADgv0EAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:15:09.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IssueManager.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\IssueManager.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\IssueManager.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\IssueManager.cs",
+              "RelativeToolTip": "Municipal Services\\IssueManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:04:16.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IssueCollection.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\IssueCollection.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\IssueCollection.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\IssueCollection.cs",
+              "RelativeToolTip": "Municipal Services\\IssueCollection.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:00:53.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReportIssues.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.Designer.cs",
+              "RelativeDocumentMoniker": "Municipal Services\\ReportIssues.Designer.cs",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\ReportIssues.Designer.cs",
+              "RelativeToolTip": "Municipal Services\\ReportIssues.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:14:59.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Municipal Services\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\keira\\source\\repos\\Municipal Services\\Municipal Services\\Properties\\Resources.resx",
+              "RelativeToolTip": "Municipal Services\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-10T14:19:48.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

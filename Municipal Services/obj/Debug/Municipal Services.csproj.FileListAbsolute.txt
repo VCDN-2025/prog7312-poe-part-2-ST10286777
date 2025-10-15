@@ -1,0 +1,12 @@
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\bin\Debug\Municipal Services.exe.config
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\bin\Debug\Municipal Services.exe
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\bin\Debug\Municipal Services.pdb
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal Services.csproj.AssemblyReference.cache
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal_Services.MainMenu.resources
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal_Services.Properties.Resources.resources
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal Services.csproj.GenerateResource.cache
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal Services.csproj.CoreCompileInputs.cache
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal Services.exe
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal Services.pdb
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal_Services.ReportIssues.resources
+C:\Users\keira\source\repos\Municipal Services\Municipal Services\obj\Debug\Municipal_Services.EventsAnnouncements.resources
