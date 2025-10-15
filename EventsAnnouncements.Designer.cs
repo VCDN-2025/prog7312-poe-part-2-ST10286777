@@ -44,6 +44,11 @@ namespace Municipal_Services
             this.panelEvents = new System.Windows.Forms.Panel();
             this.panelViewed = new System.Windows.Forms.Panel();
             this.panelRecs = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.statsPanel = new System.Windows.Forms.Panel();
+            this.lblAnalyticsTitle = new System.Windows.Forms.Label();
+            this.lblMostPopularCategory = new System.Windows.Forms.Label();
+            this.lblTotalSearches = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvents)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLastViewed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecommendations)).BeginInit();
@@ -52,6 +57,8 @@ namespace Municipal_Services
             this.panelEvents.SuspendLayout();
             this.panelViewed.SuspendLayout();
             this.panelRecs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            this.statsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEvents
@@ -83,7 +90,7 @@ namespace Municipal_Services
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(710, 10);
+            this.btnSearch.Location = new System.Drawing.Point(872, 9);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 34);
             this.btnSearch.TabIndex = 4;
@@ -130,7 +137,7 @@ namespace Municipal_Services
             // cmbCategoryFilter
             // 
             this.cmbCategoryFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategoryFilter.Location = new System.Drawing.Point(530, 12);
+            this.cmbCategoryFilter.Location = new System.Drawing.Point(693, 12);
             this.cmbCategoryFilter.Name = "cmbCategoryFilter";
             this.cmbCategoryFilter.Size = new System.Drawing.Size(160, 31);
             this.cmbCategoryFilter.TabIndex = 3;
@@ -198,7 +205,7 @@ namespace Municipal_Services
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1400, 70);
+            this.lblTitle.Size = new System.Drawing.Size(1421, 70);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Events and Announcements";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -250,7 +257,7 @@ namespace Municipal_Services
             // lblCategoryFilter
             // 
             this.lblCategoryFilter.AutoSize = true;
-            this.lblCategoryFilter.Location = new System.Drawing.Point(450, 15);
+            this.lblCategoryFilter.Location = new System.Drawing.Point(568, 15);
             this.lblCategoryFilter.Name = "lblCategoryFilter";
             this.lblCategoryFilter.Size = new System.Drawing.Size(83, 23);
             this.lblCategoryFilter.TabIndex = 2;
@@ -267,7 +274,7 @@ namespace Municipal_Services
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1400, 70);
+            this.panelHeader.Size = new System.Drawing.Size(1421, 70);
             this.panelHeader.TabIndex = 0;
             // 
             // ExitBtn
@@ -302,7 +309,7 @@ namespace Municipal_Services
             this.panelSearch.Controls.Add(this.btnClear);
             this.panelSearch.Location = new System.Drawing.Point(40, 90);
             this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(1120, 90);
+            this.panelSearch.Size = new System.Drawing.Size(1096, 90);
             this.panelSearch.TabIndex = 1;
             // 
             // panelEvents
@@ -325,7 +332,7 @@ namespace Municipal_Services
             this.panelViewed.Controls.Add(this.dgvLastViewed);
             this.panelViewed.Location = new System.Drawing.Point(40, 200);
             this.panelViewed.Name = "panelViewed";
-            this.panelViewed.Size = new System.Drawing.Size(1120, 150);
+            this.panelViewed.Size = new System.Drawing.Size(1096, 150);
             this.panelViewed.TabIndex = 2;
             // 
             // panelRecs
@@ -341,18 +348,76 @@ namespace Municipal_Services
             this.panelRecs.Size = new System.Drawing.Size(1120, 230);
             this.panelRecs.TabIndex = 4;
             // 
+            // Logo
+            // 
+            this.Logo.BackColor = System.Drawing.Color.Black;
+            this.Logo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(1196, 290);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(146, 128);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 5;
+            this.Logo.TabStop = false;
+            // 
+            // statsPanel
+            // 
+            this.statsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.statsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.statsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.statsPanel.Controls.Add(this.lblAnalyticsTitle);
+            this.statsPanel.Controls.Add(this.lblMostPopularCategory);
+            this.statsPanel.Controls.Add(this.lblTotalSearches);
+            this.statsPanel.Location = new System.Drawing.Point(1171, 90);
+            this.statsPanel.Name = "statsPanel";
+            this.statsPanel.Size = new System.Drawing.Size(218, 150);
+            this.statsPanel.TabIndex = 6;
+            // 
+            // lblAnalyticsTitle
+            // 
+            this.lblAnalyticsTitle.AutoSize = true;
+            this.lblAnalyticsTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalyticsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(180)))));
+            this.lblAnalyticsTitle.Location = new System.Drawing.Point(10, 12);
+            this.lblAnalyticsTitle.Name = "lblAnalyticsTitle";
+            this.lblAnalyticsTitle.Size = new System.Drawing.Size(168, 28);
+            this.lblAnalyticsTitle.TabIndex = 0;
+            this.lblAnalyticsTitle.Text = "Search Analytics";
+            // 
+            // lblMostPopularCategory
+            // 
+            this.lblMostPopularCategory.AutoSize = true;
+            this.lblMostPopularCategory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostPopularCategory.Location = new System.Drawing.Point(10, 52);
+            this.lblMostPopularCategory.Name = "lblMostPopularCategory";
+            this.lblMostPopularCategory.Size = new System.Drawing.Size(203, 20);
+            this.lblMostPopularCategory.TabIndex = 1;
+            this.lblMostPopularCategory.Text = "Most Popular Category: None";
+            // 
+            // lblTotalSearches
+            // 
+            this.lblTotalSearches.AutoSize = true;
+            this.lblTotalSearches.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSearches.Location = new System.Drawing.Point(10, 85);
+            this.lblTotalSearches.Name = "lblTotalSearches";
+            this.lblTotalSearches.Size = new System.Drawing.Size(119, 20);
+            this.lblTotalSearches.TabIndex = 2;
+            this.lblTotalSearches.Text = "Total Searches: 0";
+            // 
             // EventsAnnouncements
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1421, 780);
+            this.ClientSize = new System.Drawing.Size(1442, 780);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelSearch);
             this.Controls.Add(this.panelViewed);
             this.Controls.Add(this.panelEvents);
             this.Controls.Add(this.panelRecs);
+            this.Controls.Add(this.statsPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Name = "EventsAnnouncements";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -370,6 +435,9 @@ namespace Municipal_Services
             this.panelViewed.PerformLayout();
             this.panelRecs.ResumeLayout(false);
             this.panelRecs.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            this.statsPanel.ResumeLayout(false);
+            this.statsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -402,5 +470,10 @@ namespace Municipal_Services
         private System.Windows.Forms.Panel panelRecs;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button ExitBtn;
+        private PictureBox Logo;
+        private Panel statsPanel;
+        private Label lblAnalyticsTitle;
+        private Label lblMostPopularCategory;
+        private Label lblTotalSearches;
     }
 }

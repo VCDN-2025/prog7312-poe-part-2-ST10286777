@@ -86,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(508, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(511, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1300, 1000);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -201,8 +201,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(30, 558);
-            this.label1.Margin = new System.Windows.Forms.Padding(30, 25, 3, 0);
+            this.label1.Location = new System.Drawing.Point(20, 558);
+            this.label1.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(469, 31);
             this.label1.TabIndex = 4;

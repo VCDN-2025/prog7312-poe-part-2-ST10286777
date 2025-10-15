@@ -18,9 +18,11 @@ namespace Municipal_Services
         private Dictionary<string, int> searchAnalytics = new Dictionary<string, int>();
         //Tracks the number of searches per category
         private Dictionary<string, int> categorySearchCount = new Dictionary<string, int>();
-
         // Recently viewed
         private Stack<Event> viewedEvents = new Stack<Event>();
+
+        // Tracks total searches
+        private int totalSearches = 0;
 
         public IEnumerable<Event> GetAllEvents() => eventDirectory.Values;
         public HashSet<string> GetCategories() => eventCategories;
@@ -40,17 +42,17 @@ namespace Municipal_Services
             categorySearchCount.Clear();
             viewedEvents.Clear();
 
-            AddEvent(new Event { Name = "Tech Expo 2025", Category = "Technology", EventDate = new DateTime(2026, 6, 1), Location = "Cape Town Convention Center", Description = "Annual technology exhibition showcasing latest innovations" });
+            AddEvent(new Event { Name = "DRAKENSBERG BOYS CHOIR - LIVE CONCERT", Category = "Entertainment", EventDate = new DateTime(2025, 10, 19), Location = "Drakie campus in the picturesque Drakensberg!", Description = "Magical music experience of masterpieces performed by the talented and world-acclaimed Drakensberg Boys " });
             AddEvent(new Event { Name = "Food Festival", Category = "Food", EventDate = new DateTime(2026, 7, 15), Location = "Durban Beachfront", Description = "International food festival with local and international cuisines" });
             AddEvent(new Event { Name = "Jazz in the Park", Category = "Music", EventDate = new DateTime(2025, 12, 20), Location = "Johannesburg Botanical Gardens", Description = "Open air jazz concert featuring local artists" });
-            AddEvent(new Event { Name = "Marathon Run", Category = "Sports", EventDate = new DateTime(2025, 11, 10), Location = "Pretoria City Center", Description = "Annual city marathon for all fitness levels" });
+            AddEvent(new Event { Name = "Sani Stagger Endurance Race", Category = "Sports", EventDate = new DateTime(2025, 11, 8), Location = " Sani Pass Hotel", Description = "Annual city marathon for all fitness levels, Distances: 21km half; 42km marathon." });
             AddEvent(new Event { Name = "Art Exhibition", Category = "Arts", EventDate = new DateTime(2025, 10, 25), Location = "Stellenbosch Gallery", Description = "Contemporary art exhibition by local artists" });
             AddEvent(new Event { Name = "Business Summit", Category = "Business", EventDate = new DateTime(2025, 11, 5), Location = "Sandton Convention Center", Description = "Networking and business development summit" });
             AddEvent(new Event { Name = "Wine Tasting", Category = "Food", EventDate = new DateTime(2026, 8, 12), Location = "Franschhoek Valley", Description = "Premium wine tasting experience" });
             AddEvent(new Event { Name = "Comedy Night", Category = "Entertainment", EventDate = new DateTime(2025, 6, 18), Location = "Cape Town Comedy Club", Description = "Stand-up comedy featuring top comedians" });
             AddEvent(new Event { Name = "Yoga Workshop", Category = "Health", EventDate = new DateTime(2025, 7, 22), Location = "Kirstenbosch Gardens", Description = "Beginner-friendly yoga and meditation workshop" });
             AddEvent(new Event { Name = "Book Fair", Category = "Education", EventDate = new DateTime(2025, 8, 30), Location = "Johannesburg Library", Description = "Annual book fair with author signings" });
-            AddEvent(new Event { Name = "Tech Startup Pitch", Category = "Technology", EventDate = new DateTime(2025, 9, 5), Location = "Tshimologong Precinct", Description = "Startup pitching competition for tech entrepreneurs" });
+            AddEvent(new Event { Name = "Drak Challenge", Category = "Sports", EventDate = new DateTime(2025, 9, 5), Location = "Southern Drakensberg in KwaZulu-Natal", Description = "This is one of the three largest races in South Africa and covers a massive 72 kilometres over the course of the event" });
             AddEvent(new Event { Name = "Seafood Festival", Category = "Food", EventDate = new DateTime(2027, 10, 1), Location = "Hout Bay Harbor", Description = "Fresh seafood and maritime activities" });
             AddEvent(new Event { Name = "Heritage Day", Category = "Cultural", EventDate = new DateTime(2025, 11, 24), Location = "Union Buildings, Pretoria", Description = "National heritage day celebrations" });
             AddEvent(new Event { Name = "Science Fair", Category = "Education", EventDate = new DateTime(2025, 10, 15), Location = "Sci-Bono Discovery Center", Description = "Interactive science exhibition for all ages" });
@@ -83,6 +85,7 @@ namespace Municipal_Services
                 if (!searchAnalytics.ContainsKey(termLower))
                     searchAnalytics[termLower] = 0;
                 searchAnalytics[termLower]++;
+                totalSearches++;
             }
 
             //Track category filters
@@ -91,6 +94,7 @@ namespace Municipal_Services
                 if (!categorySearchCount.ContainsKey(categoryFilter))
                     categorySearchCount[categoryFilter] = 0;
                 categorySearchCount[categoryFilter]++;
+                totalSearches++;
             }
 
             var results = eventDirectory.Values.AsEnumerable();
@@ -123,11 +127,51 @@ namespace Municipal_Services
             if (!categorySearchCount.ContainsKey(category))
                 categorySearchCount[category] = 0;
             categorySearchCount[category]++;
+            totalSearches++;
 
             return eventDirectory.Values
                 .Where(e => e.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
+
+        // NEW: Methods to get search analytics data
+        public int GetTotalSearches()
+        {
+            return totalSearches;
+        }
+
+        public string GetMostPopularCategory()
+        {
+            if (categorySearchCount.Count == 0)
+                return "None";
+
+            var mostPopular = categorySearchCount
+                .OrderByDescending(x => x.Value)
+                .FirstOrDefault();
+
+            return mostPopular.Key ?? "None";
+        }
+
+        public int GetMostPopularCategoryCount()
+        {
+            if (categorySearchCount.Count == 0)
+                return 0;
+
+            return categorySearchCount
+                .OrderByDescending(x => x.Value)
+                .FirstOrDefault().Value;
+        }
+
+        public Dictionary<string, int> GetCategorySearchStats()
+        {
+            return new Dictionary<string, int>(categorySearchCount);
+        }
+
+        public Dictionary<string, int> GetSearchTermStats()
+        {
+            return new Dictionary<string, int>(searchAnalytics);
+        }
+
 
         // Sort events by date, category, or name
         public List<Event> SortEvents(string sortBy)
@@ -171,11 +215,9 @@ namespace Municipal_Services
         // Recommended events based on search history and categories
         public List<Event> GetRecommendations(int maxResults = 4)
         {
-            // Upcoming events
             var now = DateTime.Now;
             var upcoming = eventDirectory.Values.Where(e => e.EventDate >= now).ToList();
 
-            // If their is no search data from user, returns a default recommendation
             if (searchAnalytics.Count == 0 && categorySearchCount.Count == 0)
             {
                 return upcoming.OrderBy(e => e.EventDate).Take(maxResults).ToList();
@@ -183,43 +225,65 @@ namespace Municipal_Services
 
             var recommendations = new List<Event>();
 
-            // Top search terms
-            var topSearches = searchAnalytics.OrderByDescending(x => x.Value).Select(x => x.Key).Take(3).ToList();
-
-            // Top categories
-            var topCategories = categorySearchCount.OrderByDescending(x => x.Value).Select(x => x.Key).Take(2).ToList();
-
-            // Recommend by terms first
-            foreach (var term in topSearches)
-            {
-                if (string.IsNullOrEmpty(term)) continue;
-                var matches = upcoming.Where(e =>
-                    (!string.IsNullOrEmpty(e.Name) && e.Name.ToLower().Contains(term)) ||
-                    (!string.IsNullOrEmpty(e.Description) && e.Description.ToLower().Contains(term)) ||
-                    (!string.IsNullOrEmpty(e.Category) && e.Category.ToLower().Contains(term))
-                ).Take(2);
-
-                recommendations.AddRange(matches);
-            }
-
-            // Recommend by top categories
-            foreach (var cat in topCategories)
-            {
-                var catMatches = upcoming.Where(e => !string.IsNullOrEmpty(e.Category) && e.Category.Equals(cat, StringComparison.OrdinalIgnoreCase)).Take(2);
-                recommendations.AddRange(catMatches);
-            }
-
-            //Makes sure there are no duplicate events in the recommendations
-            var distinctRecommendations = recommendations
-                .GroupBy(e => e.EventId)
-                .Select(g => g.First())
-                .Take(maxResults)
+            // Get weighted recommendations (70% categories, 30% search terms)
+            var topCategories = categorySearchCount
+                .OrderByDescending(x => x.Value)
+                .Select(x => x.Key)
+                .Take(2)
                 .ToList();
 
-            if (!distinctRecommendations.Any())
-                distinctRecommendations = upcoming.OrderBy(e => e.EventDate).Take(maxResults).ToList();
+            var topSearches = searchAnalytics
+                .OrderByDescending(x => x.Value)
+                .Select(x => x.Key)
+                .Take(2)
+                .ToList();
 
-            return distinctRecommendations;
+            // CATEGORIES FIRST: 70% of recommendations from categories
+            int categoryCount = (int)Math.Ceiling(maxResults * 0.7);
+            foreach (var category in topCategories)
+            {
+                if (recommendations.Count >= categoryCount) break;
+
+                var categoryEvents = upcoming
+                    .Where(e => e.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+                    .Where(e => !recommendations.Contains(e))
+                    .OrderBy(e => e.EventDate)
+                    .Take(categoryCount - recommendations.Count);
+
+                recommendations.AddRange(categoryEvents);
+            }
+
+            // SEARCH TERMS SECOND: 30% of recommendations from search terms
+            int searchTermCount = maxResults - recommendations.Count;
+            foreach (var term in topSearches)
+            {
+                if (recommendations.Count >= maxResults) break;
+
+                var termEvents = upcoming
+                    .Where(e =>
+                        e.Name.ToLower().Contains(term) ||
+                        e.Description.ToLower().Contains(term) ||
+                        e.Category.ToLower().Contains(term)
+                    )
+                    .Where(e => !recommendations.Contains(e))
+                    .OrderBy(e => e.EventDate)
+                    .Take(1);
+
+                recommendations.AddRange(termEvents);
+            }
+
+            // Fill any remaining slots with upcoming events
+            if (recommendations.Count < maxResults)
+            {
+                var remaining = upcoming
+                    .Where(e => !recommendations.Contains(e))
+                    .OrderBy(e => e.EventDate)
+                    .Take(maxResults - recommendations.Count);
+
+                recommendations.AddRange(remaining);
+            }
+
+            return recommendations.Take(maxResults).ToList();
         }
     }
 

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Municipal_Services
 {
@@ -20,6 +21,8 @@ namespace Municipal_Services
             dgvLastViewed.CellClick += dgvLastViewed_CellClick;
             dgvRecommendations.CellClick += dgvRecommendations_CellClick;
         }
+
+      
 
         private void SetupImprovedLayout()
         {
@@ -73,12 +76,44 @@ namespace Municipal_Services
             dgvEvents.DefaultCellStyle.SelectionForeColor = Color.Black;
         }
 
+        private void UpdateSearchAnalyticsDisplay()
+        {
+            int totalSearches = eventManager.GetTotalSearches();
+            string mostPopularCategory = eventManager.GetMostPopularCategory();
+            int popularCategoryCount = eventManager.GetMostPopularCategoryCount();
+
+            lblTotalSearches.Text = $"Total Searches: {totalSearches}";
+
+            if (mostPopularCategory != "None" && popularCategoryCount > 0)
+            {
+                lblMostPopularCategory.Text = $"Most Popular: {mostPopularCategory} ({popularCategoryCount} searches)";
+                if (popularCategoryCount >= 5)
+                    lblMostPopularCategory.ForeColor = Color.FromArgb(220, 0, 0); 
+                else if (popularCategoryCount >= 3)
+                    lblMostPopularCategory.ForeColor = Color.FromArgb(255, 140, 0); 
+                else
+                    lblMostPopularCategory.ForeColor = Color.FromArgb(0, 100, 0); 
+            }
+            else
+            {
+                lblMostPopularCategory.Text = "Most Popular Category: None";
+                lblMostPopularCategory.ForeColor = Color.Gray;
+            }
+            if (totalSearches >= 10)
+                lblTotalSearches.ForeColor = Color.FromArgb(0, 100, 0); 
+            else if (totalSearches >= 5)
+                lblTotalSearches.ForeColor = Color.FromArgb(255, 140, 0);
+            else
+                lblTotalSearches.ForeColor = Color.Gray;
+        }
+
         private void EventsAnnouncements_Load(object sender, EventArgs e)
         {
             DisplayAllEvents();
             PopulateFilterControls();
             UpdateLastViewedDisplay();
             UpdateRecommendationsDisplay();
+            UpdateSearchAnalyticsDisplay();
         }
 
         private void PopulateFilterControls()
@@ -110,10 +145,10 @@ namespace Municipal_Services
 
             if (!lastViewed.Any())
             {
-                //// show placeholder row
-                //var emptyList = new List<Event> { new Event { Name = "No recently viewed events" } };
-                //dgvLastViewed.DataSource = null;
-                //dgvLastViewed.DataSource = new BindingList<Event>(emptyList);
+                // show placeholder row
+                var emptyList = new List<Event> { new Event { Name = "No recently viewed events" } };
+                dgvLastViewed.DataSource = null;
+                dgvLastViewed.DataSource = new BindingList<Event>(emptyList);
             }
             else
             {
@@ -143,6 +178,7 @@ namespace Municipal_Services
 
             // Refresh recommendations based on search
             UpdateRecommendationsDisplay();
+            UpdateSearchAnalyticsDisplay();
         }
 
         // Sort events when sort option changes
@@ -166,6 +202,7 @@ namespace Municipal_Services
                 DisplayEvents(filteredEvents);
 
                 UpdateRecommendationsDisplay();
+                UpdateSearchAnalyticsDisplay();
             }
         }
 
@@ -220,7 +257,6 @@ namespace Municipal_Services
         private void DisplayAllEvents()
         {
             var all = eventManager.GetAllEvents().ToList();
-            MessageBox.Show($"Loaded {all.Count} events");
             DisplayEvents(all);
         }
 
@@ -237,6 +273,7 @@ namespace Municipal_Services
             cmbSortBy.SelectedIndex = 0;
             DisplayAllEvents();
             UpdateRecommendationsDisplay();
+            UpdateSearchAnalyticsDisplay();
 
         }
 
@@ -256,5 +293,7 @@ namespace Municipal_Services
             this.Hide();
 
         }
+
+    
     }
 }
